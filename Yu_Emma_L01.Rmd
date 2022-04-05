@@ -1,0 +1,173 @@
+---
+title: "L01 Review"
+subtitle: "Data Science 3 with R (STAT 301-3)"
+author: "Emma Yu"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    highlight: "tango"
+---
+
+## Overview
+
+The goal of this lab is to review vocabulary and concepts from the Data Science 2 with R (STAT 301-2).
+
+## Questions
+
+When completing the following questions ensure that that your solutions are clearly indicated and that your document is neatly formatted. Consider including diagrams that in some of your answers since it might make things easier to describe. 
+
+
+### Question 1
+
+Provide a brief outline/overview of the steps involved in a supervised machine learning process. Could provide this as a bulleted list. 
+
+<br>
+**EDA: look through the data for issues, interesting features, etc.** 
+<br><br>
+**Feature engineering: take what we learned from EDA and reformat predictor values to make modeling easier** 
+<br><br>
+**Modeling tuning and selection: create multiple models and figure out which arguments work best for each one then select the best model** 
+<br><br>
+**Model evaluation: use appropriate performance metrics to see if our model is good at prediction** 
+
+<br>
+
+### Question 2
+
+Explain the difference between supervised and unsupervised learning.
+
+<br>
+**Supervised learning involves a specific outcome variable whereas unsupervised learning focuses on learning a characteristic of the data.**
+
+<br>
+
+### Question 3 
+
+In general, we can classify a model by its purpose into 1 of the 3 categories below. Provide a brief description of the goals of these model classes.
+
+1. Descriptive Models: **describe a characteristic/trend of the data**
+
+2. Inferential Models: **make a decision for a question or test a hypothesis**
+
+3. Predictive Models: **make a prediction for new data**
+
+<br>
+
+### Question 4 
+
+We can further describe/classify predictive models by how they were derived or developed as being either mechanistic or empirically driven. 
+
+#### Part A
+What does it mean to be a mechanistic model?
+<br>
+**It means that the model is dependent on estimates of different parameters/predictors.**
+<br>
+
+#### Part B
+What does it mean to be an empirically driven model?
+<br>
+**It means that the model was created by trends and approximations using the data set.**
+<br>
+
+#### Part C
+How does the mechanistic and empirically driven model terminology relate to the parametric and nonparametric model terminology? 
+<br>
+**Mechanistic models are parametric and empirically-driven models are nonparametric.**
+<br>
+
+#### Part D
+In general, is a mechanistic or empirically driven model easier to understand? Explain.
+<br>
+**Mechanistic models are easier to understand because they derive actual equations used to make the prediction and equations are easily understandable.**
+<br>
+
+#### Part E
+How does mechanistic and empirically driven model terminology relate to the idea of model flexibility? That is, which would be more or less flexible than the other.
+<br>
+**Mechanistic models are more inflexible than empirically-driven models.**
+<br>
+
+#### Part F
+Describe the bias-variance trade-off when considering the use of a mechanistic or empirically driven model. 
+<br>
+**Mechanistic models tend to have low variance and high bias whereas empirically driven models have high variance an low bias..**
+
+<br>
+
+### Question 5 
+
+Explain the difference between a regression and classification machine learning (ML) problems.
+
+<br>
+**A regression problem predicts a numeric outcome whereas a classification problem predicts qualitative values.**
+
+<br>
+
+### Question 6 
+
+When splitting the data, why is it useful to stratify by the outcome/target variable? 
+
+<br>
+**We want to make sure the distribution of the outcome variable in the training set and testing set matches the actual distribution of the variable to ensure quality of the model.**
+
+<br>
+
+### Question 7 
+
+Briefly describe how v-fold cross validation with repeats is used to estimate test RMSE. Also provide an explanation of why we use it. 
+
+<br>
+**V-fold cross validation involves creating small sets of data with our training set for model tuning and performance estimation. Since we want to find which model is the best before testing it on our testing set, we can partition our training set so we have different combinations or "more" data to work with. This can also help us avoid overfitting the model to the training set.**
+
+<br>
+
+### Question 8
+
+When might we use a bootstrap resampling procedure instead of v-fold cross validation to estimate test RMSE?
+
+<br>
+**Boostrapping tends to result in lower variance compared to v-fold cross validation.**
+
+<br>
+
+### Question 9 
+
+Briefly describe model tuning and why we use it.
+
+<br>
+**Model tuning involves finding the most optimal parameters of the model. These parameters can have a big impact on how well the model performs and can't be derived from the data itself. We can use resampling methods on the training set to see which combination of values produce the best performance.**
+
+<br>
+
+### Question 10 
+
+What are two common performance metrics when dealing with a regression ML problem?
+<br>
+**RMSE and R^2^**
+
+<br>
+What are two common performance metrics when dealing with a classification ML problem?
+<br>
+**Accuracy and ROC AUC (area under the ROC curve)**
+
+<br>
+
+### Question 11
+
+A political candidate's campaign has detailed voter history data for their constituents. The campaign is interested in two questions:
+
+1. Given a voter's profile/data how likely is it that they will vote in favor of the candidate?
+
+1. How would a voter's likelihood of support for the candidate change if they had personal contact with the candidate?
+
+Classify each question/problem as either prediction or inferential. Explain your reasoning for each.
+
+<br>
+**Question 1 is an prediction problem because it is attempting to predict the percentage value of how likely it is for the voter to vote in favor of a candidate. Question 2 is a inferential problem because it's testing a hypothesis regarding how contact with a candidate influences voter support.**
+
+<br>
+
+## Github Repo Link
+
+[https://github.com/STAT301III/l01-review-emmayu18](Emma Yu L01 Repo){target="_blank"}
